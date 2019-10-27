@@ -1,0 +1,543 @@
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ~~~~~ Top header ~~~~~ */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.top-header{
+    text-align: center;
+    color:white;
+    background:black; 
+    border-bottom: white 2px solid;
+    padding: 0.1em 0;
+    font-size: 1.0em;
+    text-transform: capitalize;
+}
+
+.top-header p{
+    margin: 0;
+}
+
+.gold{
+    color: #CAA162;
+    font-family: impact;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.main-header{
+    width: 100%;
+    
+    display: flex;
+    background-image: url("images/background.png");
+    background-size: 50%;
+    color: white;
+}
+
+.main-header h1{
+    font-size: 3rem;
+    padding: .5em;
+    padding-bottom: 0.2em;
+    padding-left: .7em;
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    font-weight: 100;
+    cursor: default;
+    white-space: pre;
+    cursor: pointer;
+}
+
+.search-bar{
+    vertical-align: bottom;
+    align-self: flex-end;
+    padding: 1em;
+    width: 50em;
+    min-width: 10em;
+    margin-bottom: 0;
+    position: relative;
+    
+}
+
+.search-bar input{
+    border-radius: 1.5em;
+    width: 100%;
+    border: 0;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 2.2em;
+    font-size: 1.2rem;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+    box-shadow: 3px 3px 3px 0px rgba(34, 34, 34, 0.5);
+}
+
+.search-bar svg{
+    color: rgb(119, 119, 119);
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.header-nav{
+    align-self: flex-end;
+    font-size: 1.5em;
+    margin-left: auto;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.header-nav a{
+    margin: 0 .5em;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header-nav a:hover{
+    color: #ccc;
+}
+
+.header-nav-profile{
+    text-align: right;
+}
+
+.main-container{
+    display: flex;
+}
+
+
+/* ~~~~~ Side Nav ~~~~~ */
+
+.category-nav{
+    height: 76vh;
+    position: fixed;
+    width: 325px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 178.781px;
+    font-size: 1.3rem;
+    line-height: 2em;
+    border-right: 1px solid #ccc;
+    font-weight: 550;    
+}
+
+input[type=checkbox].main-item:checked ~ div{
+    display: block;
+}
+
+input[type=checkbox].sub-item:checked ~ div{
+    display: block;
+}
+
+.category-nav input[type=checkbox]{
+    display: none;
+}
+
+label.main-item ~ div{
+    display: none;
+}
+
+label.sub-item ~ div{
+    display: none;
+}
+
+
+.category-nav input.main-item:checked ~ label::after,
+.category-nav input.sub-item:checked ~ label::after{
+    content: "\02039";
+    transform: rotate(90deg);
+    right: 10px;
+    position: absolute;
+    transition-duration: 300ms;
+    
+}
+
+.category-nav input.main-item:not(:checked) ~ label::after,
+.category-nav input.sub-item:not(:checked) ~ label::after{
+    content: "\02039";
+    transform: rotate(-90deg);
+    right: 20px;
+    position: absolute;
+    transition-duration: 300ms;
+    
+}
+
+.category-nav label::after{
+    content: "\02039";
+    position: absolute;
+    right: 20px;
+    transform: rotate(-90deg);
+    font-size: 2em;
+    color: rgb(129, 129, 129);
+    
+}
+
+.category-nav label:hover::after{    
+    color: rgb(53, 53, 53);
+    font-size: 2.2em;
+}
+
+.category-nav label{
+    padding-left: 1em;
+}
+
+.category-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.category-nav label:hover,
+.category-nav a:hover{
+    background: rgb(238, 223, 200);
+    display: block;
+    width: 100%;    
+}
+
+.category-nav a:hover{
+    text-decoration: underline #333;
+}
+
+.category-nav > div{
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.category-nav a,
+.category-nav label{
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+
+.category-nav .sub-item{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.category-nav label,
+.category-nav li,
+.category-nav a{
+    display: inline-block;
+    width: 100%;
+}
+
+.sub-sub-item{
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+
+/* .category-nav input + div > a,
+.category-nav input + div > label{
+    display: none;
+}
+
+input[type=checkbox]:checked + div > a,
+input[type=checkbox]:checked + div > label{
+    display: block;
+} */
+
+/* 
+input[type=checkbox]:checked ~ ul{
+    display: block;
+} */
+
+/* .sub-item input:checked ~ ul{
+    display: block;
+} */
+
+/* input:checked .sub-item{
+    display: block;
+} */
+
+
+/* ~~~~~~~~~~~ Filter Menu ~~~~~~~~~~~ */
+
+
+.filter-menu{
+    position: fixed;
+    top: 178.781px;
+    left: 325px;
+    background: #CAA162;
+    padding: .2em 0;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0 3px 5px 2px rgba(0,0,0,0.17);    
+}
+
+.filter-menu div{
+    padding: 0 .5em;
+    display: inline-block;
+}
+
+
+/* ~~~~~ Modal ~~~~~ */
+
+
+.backdrop-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.product-modal{
+    margin: auto;
+    background: white;
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    
+    
+}
+
+.product-modal h2{
+    clear: both;
+    
+}
+
+/* ~~~~~~~~~~~~~ Main ~~~~~~~~~~~~ */
+
+main{
+    display: relative;
+}
+
+.product-container{
+    margin: 0;
+    top: 200px;
+    left: 325px;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 77vh;
+    background-color: rgb(236, 236, 236);
+    margin-right: 300px;
+    padding-top: 20px;
+}
+
+.product{
+    width: 200px;
+    height: 320px;
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 10px;
+    margin: .5em .5em;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.07);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product-spot-buy{
+    width: 200px;
+    height: 320px;
+    border: 3px solid rgb(245, 28, 28);
+    border-radius: 10px;
+    margin: .5em .5em;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.07);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.special{
+    position: absolute;
+    top: -25px;
+    left: -10px;
+
+}
+
+.product:hover,
+.product-spot-buy:hover{
+    box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.10);
+}
+
+.product-clickable{
+    cursor: pointer;
+}
+
+.product-title{
+    margin-top: .5em;
+    margin-bottom: 0;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    font-size: 1.1rem;   
+    padding: 0 .2em; 
+}
+
+
+
+.product-price{    
+    margin-top: .3em;
+    margin-bottom: 0;
+    color: rgb(37, 37, 37);
+    cursor: pointer;
+    font-size: 1.3rem;    
+}
+
+.product-details{
+    margin: .4em;
+    color: rgb(145, 145, 145);
+    font-size: .9rem;
+}
+
+.product-weight{
+    
+    color: rgb(85, 85, 85);
+    font-size: .9rem;
+}
+
+.product img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 1em;
+    cursor: pointer;    
+}
+
+.product-spot-buy img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 1em;
+    cursor: pointer;    
+}
+
+.add-to-trolley{    
+    position: absolute;
+    bottom: .8em;
+    left: .8em;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    width: 8em;
+    margin: auto;
+    z-index: 2;
+    background-color: #CAA162;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.17);
+    font-weight: 400;
+}
+
+.add-to-trolley:hover{
+    color: white;
+    font-size: 1.31rem;
+}
+
+.product-margin-container{
+    margin: 0 auto;
+} 
+
+.heart{
+    position: absolute;
+    right: 10px;
+    top: 0;    
+}
+
+.heart:hover{
+    
+}
+
+.close-button{
+    
+    float: right;
+    padding: 0 .3em;
+    font-size: 2em;
+    color: rgb(150, 150, 150);
+    align-self: end;
+}
+
+.close-button:hover,
+.close-button:focus{
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~~~ trolley nav ~~~~~~~~~~~~ */
+
+.trolley-nav{
+    height: 70vh;
+    position: fixed;
+    width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 178.781px;
+    font-size: 1.5rem;
+    line-height: 2em;
+    border-left: 1px solid #ccc;
+    font-weight: 550;
+    right: 0;
+    background: white;
+}
+
+.trolley-nav h2{
+    color: #333;
+    text-align: center;
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+
+.border-container{
+    border-bottom: 2px solid rgb(228, 228, 228);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.trolley-nav ul{
+    padding-left: .6em;
+}
+
+.trolley-nav li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.total-title{
+    position: fixed;
+    bottom: 20px;
+}
+
+footer{
+    background: #333;
+    color: white;
+    width: 100%;
+    display: flex;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: #ccc;
+}
+
+footer ul{
+    margin: 2em;
+    padding-left: 0.5em;
+}
+
+footer li{
+    list-style-type: none;
+    
+}

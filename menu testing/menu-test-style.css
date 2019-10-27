@@ -1,0 +1,3 @@
+input:checked ~ div{
+    color: red;
+}

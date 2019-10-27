@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Banana Blue</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <p>Adelaide's finest supermarkets | Pasadena | Frewville | Munno Para <span class="gold">FOODLAND</span></p>            </p>
+        </div>
+        <div class="main-header">
+            <h1>Adelaide's<br/>Finest Online</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-login">
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <ul class="header-nav-links">
+                    <li><a href="#">My Favourites</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">What's New</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+    <nav>
+        <div class="category-nav">
+            
+            <div>
+                <input type="checkbox" id="fruit-veg" class="main-item"/>
+                <label for="fruit-veg" class="main-item">Fruit & Veg</label>                 
+                <div>
+                    <div>
+                        <a href="#" class="sub-item">Show all Fruit & Veg</a>
+                        <input type="checkbox" id="fruit" class="sub-item"/>
+                        <label for="fruit" class="sub-item">Fruit</label>                    
+                        <div>
+                        <a href="#" class="sub-sub-item">Show all fruit</a>
+                        <a href="#" class="sub-sub-item">Bananas</a>
+                        <a href="#" class="sub-sub-item">Apples and Pears</a>
+                        <a href="#" class="sub-sub-item">Cirtus</a>
+                        <a href="#" class="sub-sub-item">Berries</a>
+                        </div>
+                    </div>
+                    <label for="vegetables" class="sub-item">Vegetables</label> 
+                    <input type="checkbox" id="vegetables" class="sub-item"/>
+                    <div>
+                        <a href="#" class="sub-sub-item">Show all vegetables</a>
+                        <a href="#" class="sub-sub-item">Mushrooms</a>
+                        <a href="#" class="sub-sub-item">Potatoes, Onions & Leeks</a>
+                        <a href="#" class="sub-sub-item">Greens</a>
+                        <a href="#" class="sub-sub-item">Tomatoes & Capsicums</a>
+                    </div>                
+                    <label for="organic-fruit-veg" class="sub-item">Organic Fruit & Veg</label>
+                    <input type="checkbox" id="organic-fruit-veg"/>  
+                </div>                
+            </div>
+
+            <div>
+            <label for="meat-fish" class="main-item">Meat & Fish</label> 
+            <input type="checkbox" id="meat-fish" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Meat & Fish</a>
+                <label for="beef" class="sub-item">Beef</label> 
+                <input type="checkbox" id="beef" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all fruit</a>
+                    <a href="#" class="sub-sub-item">Bananas</a>
+                    <a href="#" class="sub-sub-item">Apples and Pears</a>
+                    <a href="#" class="sub-sub-item">Cirtus</a>
+                    <a href="#" class="sub-sub-item">Berries</a>
+                </div>
+                <label for="poultry" class="sub-item">Poultry</label> 
+                <input type="checkbox" id="poultry" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all poultry</a>
+                    <a href="#" class="sub-sub-item">Chicken</a>
+                    <a href="#" class="sub-sub-item">Duck</a>
+                    <a href="#" class="sub-sub-item">Turkey</a>
+                    <a href="#" class="sub-sub-item">Quail</a>
+                </div>
+                <label for="fish" class="sub-item">Fish</label> 
+                <input type="checkbox" id="fish" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all vegetables</a>
+                    <a href="#" class="sub-sub-item">Mushrooms</a>
+                    <a href="#" class="sub-sub-item">Potatoes, Onions & Leeks</a>
+                    <a href="#" class="sub-sub-item">Greens</a>
+                    <a href="#" class="sub-sub-item">Tomatoes & Capsicums</a>
+                </div>
+            </div>
+            </div>
+
+            <div>
+            <label for="pantry" class="main-item">Pantry</label> 
+            <input type="checkbox" id="pantry" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Pantry Items</a>
+                <label for="coffee" class="sub-item">Coffee</label> 
+                <input type="checkbox" id="coffee" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Coffee</a>
+                    <a href="#" class="sub-sub-item">Coffee Beans</a>
+                    <a href="#" class="sub-sub-item">Ground Coffee</a>
+                    <a href="#" class="sub-sub-item">Decaf</a>
+                </div>
+                <label for="cereal" class="sub-item">Cereal</label> 
+                <input type="checkbox" id="cereal" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Cereal</a>
+                    <a href="#" class="sub-sub-item">Muesli</a>
+                    <a href="#" class="sub-sub-item">Granola</a>
+                </div>
+            </div>
+            </div>
+
+            <div>
+            <label for="deli-cheeses" class="main-item">Deli & Cheese</label> 
+            <input type="checkbox" id="deli-cheeses" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show Deli & Cheese</a>
+                <a href="#" class="sub-item">Deli Meats</a>
+                <a href="#" class="sub-item">Cheese</a>                
+            </div>
+            </div>
+
+            <div>
+            <label for="dairy" class="main-item">Dairy</label> 
+            <input type="checkbox" id="dairy" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Dairy</a>
+                <label for="milk" class="sub-item">Milk</label> 
+                <input type="checkbox" id="milk" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all milk</a>
+                    <a href="#" class="sub-sub-item">Whole Milk</a>
+                    <a href="#" class="sub-sub-item">Light Milk</a>
+                    <a href="#" class="sub-sub-item">Soy Milk</a>
+                    <a href="#" class="sub-sub-item">Flavoured Milk</a>
+                </div>
+                <label for="dairy-cheese" class="sub-item">Cheese</label> 
+                <input type="checkbox" id="dairy-cheese" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Cheese</a>
+                    <a href="#" class="sub-sub-item">Blocks</a>
+                    <a href="#" class="sub-sub-item">Shredded & Grated</a>
+                    <a href="#" class="sub-sub-item">Sliced</a>
+                </div>
+                <a href="#" class="sub-item">Juice</a>
+                <a href="#" class="sub-item">Eggs</a>
+                <a href="#" class="sub-item">Yoghurt</a>
+            </div>
+            </div>
+
+            <div>
+            <label for="bakery" class="main-item">Bakery</label> 
+            <input type="checkbox" id="bakery" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Bakery Items</a>
+                <label for="bread" class="sub-item">Bread</label> 
+                <input type="checkbox" id="bread" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Bread</a>                
+                </div>
+                <label for="cake" class="sub-item">Cake</label> 
+                <input type="checkbox" id="cake" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Cakes</a>                
+                    <a href="#" class="sub-sub-item">Sponge Cake</a>                
+                    <a href="#" class="sub-sub-item">Lamingtons</a>                
+                    <a href="#" class="sub-sub-item">Slices</a>                
+                </div>
+            </div>
+            </div>
+
+            <div>
+            <label for="personal-care" class="main-item">Personal Care</label> 
+            <input type="checkbox" id="personal-care" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Personal Care Items</a>
+                <label for="oral-hygiene" class="sub-item">Oral Hygiene</label> 
+                <input type="checkbox" id="oral-hygiene" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Oral Hygiene Items</a>                
+                    <a href="#" class="sub-sub-item">Toothpaste</a>                
+                    <a href="#" class="sub-sub-item">Toothbrushes</a>                
+                    <a href="#" class="sub-sub-item">Dental Floss</a>                
+                    <a href="#" class="sub-sub-item">Mouthwash</a>                
+                </div>
+                <label for="shaving" class="sub-item">Shaving</label> 
+                <input type="checkbox" id="shaving" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Shaving Items</a>                
+                    <a href="#" class="sub-sub-item">Shaving Cream</a>                
+                    <a href="#" class="sub-sub-item">Razors</a>                
+                    <a href="#" class="sub-sub-item">After Shave</a>                
+                </div>
+                <label for="hair-products" class="sub-item">Hair Products</label> 
+                <input type="checkbox" id="hair-products" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Hair Products</a>                
+                    <a href="#" class="sub-sub-item">Shampoo</a>                
+                    <a href="#" class="sub-sub-item">Conditioner</a>                
+                    <a href="#" class="sub-sub-item">Hair Spray</a>                
+                    <a href="#" class="sub-sub-item">Hair Dye</a>                
+                    <a href="#" class="sub-sub-item">Waxes & Gels</a>                
+                </div>
+            </div>
+            </div>
+
+            <div>
+            <label for="frozen" class="main-item">Frozen</label> 
+            <input type="checkbox" id="frozen" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Frozen Food</a>
+                <label for="frozen-vegetables" class="sub-item">Vegetables</label> 
+                <input type="checkbox" id="frozen-vegetables" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Frozen Vegetables</a>
+                    <a href="#" class="sub-sub-item">Chips & Potatoes</a>
+                    <a href="#" class="sub-sub-item">Peas & Corn</a>                    
+                </div>
+                <label for="ice-cream" class="sub-item">Ice cream</label> 
+                <input type="checkbox" id="ice-cream" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Ice Cream</a>
+                    <a href="#" class="sub-sub-item">Frozen Yougurt</a>
+                    <a href="#" class="sub-sub-item">Gelati</a>
+                </div>
+                <a href="#" class="sub-item">Pastry</a>
+                <a href="#" class="sub-item">Frozen Fruit</a>
+                <a href="#" class="sub-item">Frozen Meals</a>
+                <a href="#" class="sub-item">Frozen Pizzas</a>
+            </div>
+            </div>
+
+            <div>
+                <label for="pet-food" class="main-item">Pet Food</label> 
+                <input type="checkbox" id="pet-food" class="main-item"/>
+                    <div>
+                    <a href="#" class="sub-item">Show all Pet Food</a>
+                    <a href="#" class="sub-item">Show all Pet Accessories</a>
+                    <label for="dog-food" class="sub-item">Dog Food</label> 
+                    <input type="checkbox" id="dog-food" class="sub-item"/>
+                    <div>
+                        <a href="#" class="sub-sub-item">Show all Dog Food</a>                                            
+                        <a href="#" class="sub-sub-item">Dry Dog Food</a>                                            
+                        <a href="#" class="sub-sub-item">Wet Dog Food</a>                                            
+                    </div>
+                    <label for="cat-food" class="sub-item">Cat Food</label> 
+                    <input type="checkbox" id="cat-food" class="sub-item"/>
+                    <div>
+                        <a href="#" class="sub-sub-item">Show all Cat Food</a>                                            
+                        <a href="#" class="sub-sub-item">Dry Cat Food</a>                                            
+                        <a href="#" class="sub-sub-item">Wet Cat Food</a>                                            
+                    </div>
+                </div>
+            </div>
+
+            <div>
+            <label for="variety" class="main-item">Variety</label> 
+            <input type="checkbox" id="variety" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Variety Items</a>
+                <label for="newspapers-magazines" class="sub-item">Newspapers & Magazines</label> 
+                <input type="checkbox" id="newspapers-magazines" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Newspapers & Magazines</a>                                            
+                    <a href="#" class="sub-sub-item">Newspapers</a>                                            
+                    <a href="#" class="sub-sub-item">Magazines</a>                                            
+                </div>
+            </div>
+            </div>
+
+            <div>
+                <label for="household" class="main-item">Household</label> 
+                <input type="checkbox" id="household" class="main-item"/>
+                <div>
+                    <a href="#" class="sub-item">Show all Household Items</a>
+                    <label for="laundry" class="sub-item">Laundry</label> 
+                    <input type="checkbox" id="laundry" class="sub-item"/>
+                    <div>
+                        <a href="#" class="sub-sub-item">Show all Laundry Items</a>                
+                        <a href="#" class="sub-sub-item">Laundry Liquid</a>                
+                        <a href="#" class="sub-sub-item">Laundry Powder</a>                
+                        <a href="#" class="sub-sub-item">Stain Removal</a>                
+                    </div>
+                    <label for="cleaning" class="sub-item">Cleaning Products</label> 
+                    <input type="checkbox" id="cleaning" class="sub-item"/>
+                    <div>
+                        <a href="#" class="sub-sub-item">Show all Cleaning Products</a>                
+                        <a href="#" class="sub-sub-item">Bathroom Cleaners</a>                
+                        <a href="#" class="sub-sub-item">Kitchen Cleaners</a>                
+                        <a href="#" class="sub-sub-item">Sponges & Cloths</a>                
+                    </div>
+                </div>
+            </div>
+
+            <div>
+            <label for="flowers" class="main-item">Flowers</label> 
+            <input type="checkbox" id="flowers" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Flowers</a>
+                <label for="flower-bunches" class="sub-item">Flower Bunches</label> 
+                <input type="checkbox" id="flower-bunches" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Flower Bunches</a>                                            
+                </div>
+            </div>
+            </div>  
+
+            <div>
+            <label for="alcohol" class="main-item">Alcohol</label> 
+            <input type="checkbox" id="alcohol" class="main-item"/>
+            <div>
+                <a href="#" class="sub-item">Show all Alcohol</a>
+                <label for="beer" class="sub-item">Beer</label> 
+                <input type="checkbox" id="beer" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Beer</a>
+                    <a href="#" class="sub-sub-item">Ale</a>
+                    <a href="#" class="sub-sub-item">Lager</a>                    
+                </div>
+                <label for="wine" class="sub-item">Wine</label> 
+                <input type="checkbox" id="wine" class="sub-item"/>
+                <div>
+                    <a href="#" class="sub-sub-item">Show all Wine</a>
+                    <a href="#" class="sub-sub-item">White Wine</a>
+                    <a href="#" class="sub-sub-item">Red Whine</a>                    
+                </div>
+                </div>
+            </div>
+
+
+
+            
+        
+
+
+                           
+            <!-- <ul id="fruit-veg-sub-item">
+                <li>
+                    
+                </li>                                             
+                <li>
+                    <div class="sub-item">                    
+                        <input type="checkbox" id="fruit"/>
+                        <label for="fruit">Fruit</label>
+                        <ul>
+                            <div class="sub-sub-item">
+                                <li><a href="#">Show all fruit</a></li>
+                                <li><a href="#">Bananas</a></li>
+                                <li><a href="#">Apples and Pears</a></li>
+                                <li><a href="#">Cirtus</a></li>
+                                <li><a href="#">Berries</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                                        
+                </li>
+                <li>
+                    <div class="sub-item">
+                        <input type="checkbox" id="vegetables"/>
+                        <label for="vegetables">Vegetables</label>
+                        <ul>
+                            <div class="sub-sub-item">
+                                <li><a href="#">Show all vegetables</a></li>
+                                <li><a href="#">Mushrooms</a></li>
+                                <li><a href="#">Potatoes, Onions & Leeks</a></li>
+                                <li>Greens</li>
+                                <li>Tomatoes & Capsicums</li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <input type="checkbox" id="organic-fruit-veg"/>
+                <label for="organic-fruit-veg">Organic Fruit & Veg</label>                
+                <ul>
+                    <li>Bananas</li>
+                    <li>Apples and Pears</li>
+                    <li>Citrus</li>
+                    <li>Berries</li>
+                </ul>
+
+
+                <li>Salad & Vegetable packs</li>
+                <li>Organic Fruit & Veg</li>
+                <li>Asian Produce</li>
+            </ul>
+        </div>
+                <li>Meat & Fish</li>
+                <li>Deli</li> -->
+
+                
+
+            
+        
+
+        
+    </nav>
+
+    <main>
+
+        <div class="backdrop-modal">
+            <div class="product-modal">
+                
+                <span class="close-button">&times;</span>
+                <h2>Iceberg Lettuce</h2>
+            </div>
+        </div>
+        
+        
+
+        <div class="product-container">
+
+            <div class="filter-menu">
+                    <div>
+                        <input type="checkbox" id="organic"/>
+                        <label for="organic">Organic</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gluten-free"/>
+                        <label for="gluten-free">Gluten Free</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="vegan"/>
+                        <label for="vegan">Vegan</label>
+                    </div>
+        
+        
+                </div>
+
+            <div class="product-margin-container">
+                <div class="product">                    
+                    <img src="images/lettuce.jpg">
+                    <div class="product-clickable">
+                        <img src="images/heart.jpg" class="heart">
+                        <h2 class="product-title">Iceberg Lettuce</h2>
+                        <h3 class="product-details">Each</h3>
+                        <h2 class="product-price">$1.99</h2>
+                    </div>
+                    <button class="add-to-trolley" type="button">Add to Trolley</button>
+                </div>     
+            </div>
+            <div class="product-margin-container">
+                <div class="product-spot-buy">                    
+                    <img src="images/rump-steak.jpg">
+                    <div class="product-clickable">
+                        <img src="images/heart.jpg" class="heart">
+                        <img src="images/special.png" class="special">
+                        <h2 class="product-title">Adelaide's Finest Wagyu Rump Steak</h2>
+                        <h3 class="product-details">1kg</h3>
+                        <h2 class="product-price">$26.00</h2>
+                    </div>
+                    <button class="add-to-trolley" type="button">Add to Trolley</button>
+                </div>     
+            </div>
+            <div class="product-margin-container">
+                <div class="product">                    
+                    <img src="images/lime.jpg">
+                    <div class="product-clickable">
+                        
+                        <img src="images/heart.jpg" class="heart">
+                        <h2 class="product-title">Lime</h2>                        
+                        <h3 class="product-details">Each</h3>
+                        <h2 class="product-price">$1.00</h2>
+                    </div>
+                    <button class="add-to-trolley" type="button">Add to Trolley</button>
+                </div>     
+            </div>
+            <div class="product-margin-container">
+                <div class="product">                    
+                    <img src="images/helgas-crop.jpg">
+                    <div class="product-clickable">
+                        <img src="images/heart.jpg" class="heart">
+                        <h2 class="product-title">Helga's Wholemeal 10 Grains & Seeds Loaf</h2>                        
+                        
+                        <h3 class="product-details"><span class="product-weight">750g</span> | $0.52 per 100g</h3>
+                        <h2 class="product-price">$3.90</h2>
+                    </div>
+                    <button class="add-to-trolley" type="button">Add to Trolley</button>
+                </div>     
+            </div>
+            <div class="product-margin-container">
+                    <div class="product">                    
+                        <img src="images/lettuce.jpg">
+                        <div class="product-clickable">
+                            <img src="images/heart.jpg" class="heart">
+                            <h2>Iceberg Lettuce</h2>
+                            <h2>$1.99</h2>
+                        </div>
+                        <button class="add-to-trolley" type="button">Add to Trolley</button>
+                    </div>     
+                </div>
+                <div class="product-margin-container">
+                        <div class="product">                    
+                            <img src="images/lettuce.jpg">
+                            <div class="product-clickable">
+                                <img src="images/heart.jpg" class="heart">
+                                <h2>Iceberg Lettuce</h2>
+                                <h2>$1.99</h2>
+                            </div>
+                            <button class="add-to-trolley" type="button">Add to Trolley</button>
+                        </div>     
+                    </div>
+                    <div class="product-margin-container">
+                            <div class="product">                    
+                                <img src="images/lettuce.jpg">
+                                <div class="product-clickable">
+                                    <img src="images/heart.jpg" class="heart">
+                                    <h2>Iceberg Lettuce</h2>
+                                    <h2>$1.99</h2>
+                                </div>
+                                <button class="add-to-trolley" type="button">Add to Trolley</button>
+                            </div>     
+                        </div>
+                        <div class="product-margin-container">
+                                <div class="product">                    
+                                    <img src="images/lettuce.jpg">
+                                    <div class="product-clickable">
+                                        <img src="images/heart.jpg" class="heart">
+                                        <h2>Iceberg Lettuce</h2>
+                                        <h2>$1.99</h2>
+                                    </div>
+                                    <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                </div>     
+                            </div>
+                            <div class="product-margin-container">
+                                    <div class="product">                    
+                                        <img src="images/lettuce.jpg">
+                                        <div class="product-clickable">
+                                            <img src="images/heart.jpg" class="heart">
+                                            <h2>Iceberg Lettuce</h2>
+                                            <h2>$1.99</h2>
+                                        </div>
+                                        <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                    </div>     
+                                </div>
+                                <div class="product-margin-container">
+                                        <div class="product">                    
+                                            <img src="images/lettuce.jpg">
+                                            <div class="product-clickable">
+                                                <img src="images/heart.jpg" class="heart">
+                                                <h2>Iceberg Lettuce</h2>
+                                                <h2>$1.99</h2>
+                                            </div>
+                                            <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                        </div>     
+                                    </div>
+                                    <div class="product-margin-container">
+                                            <div class="product">                    
+                                                <img src="images/lettuce.jpg">
+                                                <div class="product-clickable">
+                                                    <img src="images/heart.jpg" class="heart">
+                                                    <h2>Iceberg Lettuce</h2>
+                                                    <h2>$1.99</h2>
+                                                </div>
+                                                <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                            </div>     
+                                        </div>
+                                        <div class="product-margin-container">
+                                                <div class="product">                    
+                                                    <img src="images/lettuce.jpg">
+                                                    <div class="product-clickable">
+                                                        <img src="images/heart.jpg" class="heart">
+                                                        <h2>Iceberg Lettuce</h2>
+                                                        <h2>$1.99</h2>
+                                                    </div>
+                                                    <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                </div>     
+                                            </div>
+                                            <div class="product-margin-container">
+                                                    <div class="product">                    
+                                                        <img src="images/lettuce.jpg">
+                                                        <div class="product-clickable">
+                                                            <img src="images/heart.jpg" class="heart">
+                                                            <h2>Iceberg Lettuce</h2>
+                                                            <h2>$1.99</h2>
+                                                        </div>
+                                                        <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                    </div>     
+                                                </div>
+                                                <div class="product-margin-container">
+                                                        <div class="product">                    
+                                                            <img src="images/lettuce.jpg">
+                                                            <div class="product-clickable">
+                                                                <img src="images/heart.jpg" class="heart">
+                                                                <h2>Iceberg Lettuce</h2>
+                                                                <h2>$1.99</h2>
+                                                            </div>
+                                                            <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                        </div>     
+                                                    </div>
+                                                    <div class="product-margin-container">
+                                                            <div class="product">                    
+                                                                <img src="images/lettuce.jpg">
+                                                                <div class="product-clickable">
+                                                                    <img src="images/heart.jpg" class="heart">
+                                                                    <h2>Iceberg Lettuce</h2>
+                                                                    <h2>$1.99</h2>
+                                                                </div>
+                                                                <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                            </div>     
+                                                        </div>
+
+                                                        <div class="product-margin-container">
+                                                                <div class="product">                    
+                                                                    <img src="images/lettuce.jpg">
+                                                                    <div class="product-clickable">
+                                                                        <img src="images/heart.jpg" class="heart">
+                                                                        <h2>Iceberg Lettuce</h2>
+                                                                        <h2>$1.99</h2>
+                                                                    </div>
+                                                                    <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                                </div>     
+                                                            </div>
+
+                                                            <div class="product-margin-container">
+                                                                    <div class="product">                    
+                                                                        <img src="images/lettuce.jpg">
+                                                                        <div class="product-clickable">
+                                                                            <img src="images/heart.jpg" class="heart">
+                                                                            <h2>Iceberg Lettuce</h2>
+                                                                            <h2>$1.99</h2>
+                                                                        </div>
+                                                                        <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                                    </div>     
+                                                                </div>
+
+                                                                <div class="product-margin-container">
+                                                                        <div class="product">                    
+                                                                            <img src="images/lettuce.jpg">
+                                                                            <div class="product-clickable">
+                                                                                <img src="images/heart.jpg" class="heart">
+                                                                                <h2>Iceberg Lettuce</h2>
+                                                                                <h2>$1.99</h2>
+                                                                            </div>
+                                                                            <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                                        </div>     
+                                                                    </div>
+
+                                                                    <div class="product-margin-container">
+                                                                            <div class="product">                    
+                                                                                <img src="images/lettuce.jpg">
+                                                                                <div class="product-clickable">
+                                                                                    <img src="images/heart.jpg" class="heart">
+                                                                                    <h2>Iceberg Lettuce</h2>
+                                                                                    <h2>$1.99</h2>
+                                                                                </div>
+                                                                                <button class="add-to-trolley" type="button">Add to Trolley</button>
+                                                                            </div>     
+                                                                        </div>
+                                                            
+                                                                                                                                                                                                                            
+
+            
+
+            <footer>
+                <ul>
+                    <li>
+                        Learn More
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Company Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Getting Started
+                    </li>
+                    <li>
+                        <a href="#">Deliver or Collect</a>
+                    </li>
+                    <li>
+                        <a href="#">Waste Not - Want Not</a>
+                    </li>
+                    <li>
+                        <a href="#">Payment Options</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Contact Us
+                    </li>
+                    <li>
+                        <a href="#">Call us on 1300 304 348</a>
+                    </li>
+                    <li>
+                        <a href="#">Email Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Live Chat</a>
+                    </li>                    
+                </ul>
+            </footer>
+
+        </div>
+
+        
+
+    </main>
+
+    <nav>
+        <div class="trolley-nav">
+            <h2>Your Trolley</h2>
+            <div class="border-container">
+            </div>
+            <ul class="trolley-list">
+                <li>$1.99 - Iceberg Lettuce</li>
+                <li>$1.99 - Iceberg Lettuce</li>
+                <li>$1.99 - Iceberg Lettuce</li>
+                <li>$1.99 - Iceberg Lettuce</li>
+                <li>$1.99 - Iceberg Lettuce</li>
+                <li>$1.99 - Iceberg Lettuce</li>
+                <li>$1.99 - Iceberg Lettuce</li>
+            </ul>
+            <h3 class="total-title">Current total is: $84.55</h3>
+        </div>
+        
+    </nav>
+
+</div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
