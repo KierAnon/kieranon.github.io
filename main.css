@@ -33,9 +33,22 @@ header{
     text-transform: uppercase;
 }
 
+.current-location{
+    font-weight: 600;
+}
+
+.top-header a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ~~~~~~~~~~~~ Main Header */
+
+
+
 .main-header{
     width: 100%;
-    
+    vertical-align: bottom;
     display: flex;
     background-image: url("images/background.png");
     background-size: 50%;
@@ -44,15 +57,15 @@ header{
 
 .main-header h1{
     font-size: 3rem;
-    padding: .5em;
-    padding-bottom: 0.2em;
-    padding-left: .7em;
-    margin: 0;
+    margin-bottom: .15em;
+    padding-top: 0rem;
     font-family: 'Courgette', cursive;
-    font-weight: 100;
-    cursor: default;
+    font-weight: 100;    
     white-space: pre;
     cursor: pointer;
+    margin-top: .3em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 .search-bar{
@@ -91,11 +104,19 @@ header{
     align-self: flex-end;
     font-size: 1.5em;
     margin-left: auto;
+    margin-bottom: .2em;
 }
 
-.header-nav ul{
-    list-style-type: none;
+.header-nav-login{
+    font-size: 1rem;
+    margin-left: 305px;
+    margin-bottom: .5em;
     display: flex;
+}
+
+.header-nav-links{
+    display: flex;
+    margin-bottom: .5em;
 }
 
 .header-nav a{
@@ -121,12 +142,12 @@ header{
 /* ~~~~~ Side Nav ~~~~~ */
 
 .category-nav{
-    height: 76vh;
+    height: 85vh;
     position: fixed;
     width: 250px;
     overflow-y: scroll;
     overflow-x: hidden;
-    margin-top: 178.781px;
+    margin-top: 106.766px;
     font-size: 1.2rem;
     line-height: 2em;
     border-right: 1px solid #ccc;
@@ -266,7 +287,7 @@ input[type=checkbox]:checked ~ ul{
 
 .filter-menu{
     position: fixed;
-    top: 178.781px;
+    top: 106.766px;
     left: 250px;
     background: #CAA162;
     padding: .2em 0;
@@ -319,13 +340,13 @@ main{
 
 .product-container{
     margin: 0;
-    top: 205px;
+    top: 133px;
     left: 250px;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    height: 77vh;
+    height: 84.6vh;
     background-color: rgb(236, 236, 236);
     margin-right: 250px;
     padding-top: 20px;
@@ -512,12 +533,12 @@ main{
 }
 
 .trolley-items{
-    height: 70vh;
+    height: 78vh;
     position: fixed;
     width: 250px;
     overflow-y: scroll;
     overflow-x: hidden;
-    margin-top: 178.781px;
+    margin-top: 106.766px;
     font-size: 1.5rem;
     line-height: 2em;
     border-left: 1px solid #ccc;
